@@ -6,7 +6,7 @@ using System.Text;
 internal class Program
 {
 
-    // https://github.com/dotnet/runtime/blob/main/docs/design/specs/PortablePdb-Metadata.md#source-link-c-and-vb-compilers
+    // See https://github.com/dotnet/runtime/blob/main/docs/design/specs/PortablePdb-Metadata.md#source-link-c-and-vb-compilers
     private static readonly Guid SourceLinkKind = new("CC110556-A091-4D38-9FEC-25AB9A351A6A");
 
     private static int Main(string[] args)
@@ -92,7 +92,7 @@ internal class Program
         return false;
     }
 
-    static BlobReader GetCustomDebugInformationReader(MetadataReader metadataReader, EntityHandle handle, Guid kind)
+    private static BlobReader GetCustomDebugInformationReader(MetadataReader metadataReader, EntityHandle handle, Guid kind)
     {
         foreach (CustomDebugInformationHandle cdiHandle in metadataReader.GetCustomDebugInformation(handle))
         {
