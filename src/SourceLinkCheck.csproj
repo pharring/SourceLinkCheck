@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net472;net6.0</TargetFrameworks>
+    <TargetFrameworks>net472;net8.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
@@ -12,8 +12,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.DiaSymReader.Native" Version="17.8.0-beta1.23475.2" />
     <PackageReference Include="Microsoft.DiaSymReader.PortablePdb" Version="1.6.0" />
-    <PackageReference Include="Microsoft.SourceLink.Tools" Version="1.1.1" />
-    <PackageReference Include="System.Reflection.Metadata" Version="6.0.1" />
+    <PackageReference Include="Microsoft.SourceLink.Tools" Version="8.0.0" />
+    <PackageReference Include="System.Reflection.Metadata" Version="8.0.0" />
   </ItemGroup>
 
 </Project>

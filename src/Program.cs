@@ -3,6 +3,8 @@ using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Text;
 
+namespace SourceLinkCheck;
+
 internal class Program
 {
 
