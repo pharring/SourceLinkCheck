@@ -1,6 +1,8 @@
 ﻿using Microsoft.DiaSymReader;
 using System.Reflection;
 
+namespace SourceLinkCheck;
+
 public sealed class DummySymReaderMetadataProvider : ISymReaderMetadataProvider
 {
     public static readonly ISymReaderMetadataProvider Instance = new DummySymReaderMetadataProvider();
